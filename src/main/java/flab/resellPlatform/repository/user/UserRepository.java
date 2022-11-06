@@ -27,6 +27,5 @@ public interface UserRepository {
     Optional<String> findUsername(String phoneNumber);
     List<UserEntity> findAll();
     int updatePassword(LoginInfo loginInfo);
-
     int updatePassword(StrictLoginInfo strictLoginInfo);
 }
